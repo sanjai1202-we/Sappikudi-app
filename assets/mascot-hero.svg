@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" fill="none">
+  <!-- Main Water Drop Body -->
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BAE6FD"/>
+      <stop offset="100%" style="stop-color:#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Drop tip -->
+  <path d="M100 20 Q100 20 100 20 L100 50" stroke="url(#bodyGrad)" stroke-width="30" stroke-linecap="round"/>
+  
+  <!-- Main body -->
+  <ellipse cx="100" cy="150" rx="80" ry="90" fill="url(#bodyGrad)"/>
+  
+  <!-- Shine effect -->
+  <ellipse cx="70" cy="120" rx="25" ry="40" fill="url(#shineGrad)"/>
+  
+  <!-- Happy face -->
+  <!-- Eyes -->
+  <ellipse cx="70" cy="135" rx="12" ry="16" fill="#1E3A5F"/>
+  <ellipse cx="130" cy="135" rx="12" ry="16" fill="#1E3A5F"/>
+  
+  <!-- Eye shine -->
+  <circle cx="66" cy="130" r="5" fill="#fff"/>
+  <circle cx="126" cy="130" r="5" fill="#fff"/>
+  
+  <!-- Eyebrows (happy) -->
+  <path d="M55 115 Q70 105 85 115" stroke="#1E3A5F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M115 115 Q130 105 145 115" stroke="#1E3A5F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Blush -->
+  <ellipse cx="45" cy="155" rx="15" ry="10" fill="#FDA4AF" opacity="0.6"/>
+  <ellipse cx="155" cy="155" rx="15" ry="10" fill="#FDA4AF" opacity="0.6"/>
+  
+  <!-- Big smile -->
+  <path d="M60 175 Q100 210 140 175" stroke="#1E3A5F" stroke-width="6" stroke-linecap="round" fill="none"/>
+  
+  <!-- Tongue -->
+  <ellipse cx="100" cy="190" rx="15" ry="10" fill="#FDA4AF"/>
+  
+  <!-- Little arms waving -->
+  <path d="M25 140 Q5 120 15 100" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M175 140 Q195 120 185 100" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" fill="none"/>
+  
+  <!-- Sparkles around -->
+  <text x="15" y="80" font-size="20">✨</text>
+  <text x="170" y="70" font-size="20">⭐</text>
+  <text x="160" y="240" font-size="16">💧</text>
+</svg>

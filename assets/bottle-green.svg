@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" fill="none">
+  <defs>
+    <linearGradient id="greenBottle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BBF7D0"/>
+      <stop offset="100%" style="stop-color:#4ADE80"/>
+    </linearGradient>
+    <linearGradient id="greenCap" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22C55E"/>
+      <stop offset="100%" style="stop-color:#16A34A"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Leaf-shaped cap -->
+  <ellipse cx="60" cy="15" rx="25" ry="12" fill="url(#greenCap)"/>
+  <rect x="35" y="20" width="50" height="20" rx="5" fill="url(#greenCap)"/>
+  
+  <!-- Bottle neck -->
+  <rect x="40" y="40" width="40" height="15" rx="5" fill="url(#greenBottle)"/>
+  
+  <!-- Bottle body -->
+  <path d="M30 55 L30 170 Q30 190 50 190 L70 190 Q90 190 90 170 L90 55 Q90 50 85 50 L35 50 Q30 50 30 55" fill="url(#greenBottle)"/>
+  
+  <!-- Shine -->
+  <path d="M40 60 L40 175 Q40 180 45 180" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.5"/>
+  
+  <!-- Cute face -->
+  <circle cx="50" cy="110" r="6" fill="#1E3A5F"/>
+  <circle cx="70" cy="110" r="6" fill="#1E3A5F"/>
+  <circle cx="48" cy="108" r="2" fill="#fff"/>
+  <circle cx="68" cy="108" r="2" fill="#fff"/>
+  
+  <!-- Leaf eyebrows -->
+  <path d="M42 100 Q50 95 58 100" stroke="#16A34A" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M62 100 Q70 95 78 100" stroke="#16A34A" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Happy smile -->
+  <path d="M45 130 Q60 145 75 130" stroke="#1E3A5F" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Blush -->
+  <ellipse cx="38" cy="120" rx="6" ry="4" fill="#86EFAC" opacity="0.8"/>
+  <ellipse cx="82" cy="120" rx="6" ry="4" fill="#86EFAC" opacity="0.8"/>
+  
+  <!-- Leaf decorations -->
+  <path d="M15 80 Q20 70 25 80 Q20 90 15 80" fill="#4ADE80"/>
+  <path d="M95 70 Q100 60 105 70 Q100 80 95 70" fill="#4ADE80"/>
+  
+  <!-- Recycle symbol hint -->
+  <text x="50" y="165" font-size="14">🌿</text>
+</svg>

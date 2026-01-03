@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop cute and colorful water bottles for kids at Sappikudi!">
+    <title>Our Bottles - Sappikudi 🍼</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">💧</div>
+                <span class="logo-text">Sappikudi</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="products.html" class="active">🍼 Bottles</a></li>
+                <li><a href="tracker.html">⭐ Water Fun</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header" style="padding-top: 120px; padding-bottom: 40px;">
+        <div class="container text-center">
+            <h1>Pick Your Bottle! 🍼</h1>
+            <p class="section-subtitle">Each color has a special meaning!</p>
+        </div>
+    </section>
+
+    <section class="color-filter" style="padding: 20px 0;">
+        <div class="container">
+            <div class="filter-container" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all">🌈 All</button>
+                <button class="filter-btn" data-filter="blue">💙 Blue</button>
+                <button class="filter-btn" data-filter="pink">💗 Pink</button>
+                <button class="filter-btn" data-filter="green">💚 Green</button>
+                <button class="filter-btn" data-filter="purple">💜 Purple</button>
+                <button class="filter-btn" data-filter="yellow">💛 Yellow</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="product-grid" id="productGrid">
+
+                <!-- BLUE BOTTLE - Sky Theme -->
+                <div class="product-card" data-color="blue">
+                    <button class="product-favorite">🤍</button>
+                    <img src="assets/bottle-blue.svg" alt="Ocean Buddy" class="product-image">
+                    <h3 class="product-name">Ocean Buddy 🌊</h3>
+                    <div class="product-tagline"
+                        style="background:linear-gradient(135deg,#BAE6FD,#7DD3FC);padding:10px;border-radius:15px;margin:10px 0;">
+                        <p style="color:#0369A1;font-weight:600;font-size:0.9rem;margin:0;">
+                            "Be as free as the sky! ☁️ Stay hydrated and flow like gentle rainfall!"
+                        </p>
+                    </div>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">500ml • BPA Free • Spill-Proof</p>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background:#7DD3FC;"></span>
+                        <span class="color-dot" style="background:#38BDF8;"></span>
+                    </div>
+                    <p class="product-price">₹499</p>
+                    <!-- Review -->
+                    <div class="review-card"
+                        style="background:#F0F9FF;padding:12px;border-radius:12px;margin:10px 0;text-align:left;">
+                        <div style="color:#FDE047;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-size:0.85rem;color:#374151;margin:5px 0;">"My son loves this bottle! He says
+                            drinking water makes him feel like a cloud floating in the sky!" 😊</p>
+                        <p style="font-size:0.75rem;color:#9CA3AF;margin:0;">- Priya M., Mom of Arjun (6 yrs)</p>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%;">Add to Cart! 🛒</button>
+                </div>
+
+                <!-- PINK BOTTLE - Love & Care Theme -->
+                <div class="product-card" data-color="pink">
+                    <button class="product-favorite">🤍</button>
+                    <img src="assets/bottle-pink.svg" alt="Pinky Pop" class="product-image">
+                    <h3 class="product-name">Pinky Pop 🌸</h3>
+                    <div class="product-tagline"
+                        style="background:linear-gradient(135deg,#FECDD3,#FDA4AF);padding:10px;border-radius:15px;margin:10px 0;">
+                        <p style="color:#9F1239;font-weight:600;font-size:0.9rem;margin:0;">
+                            "Drink with love! 💕 Every sip fills your heart with happiness and care!"
+                        </p>
+                    </div>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">500ml • Glitter Cap • Easy Grip</p>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background:#FDA4AF;"></span>
+                        <span class="color-dot" style="background:#FB7185;"></span>
+                    </div>
+                    <p class="product-price">₹549</p>
+                    <!-- Review -->
+                    <div class="review-card"
+                        style="background:#FFF1F2;padding:12px;border-radius:12px;margin:10px 0;text-align:left;">
+                        <div style="color:#FDE047;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-size:0.85rem;color:#374151;margin:5px 0;">"My daughter carries this everywhere!
+                            She calls it her 'princess bottle' and actually drinks more water now!" 👸</p>
+                        <p style="font-size:0.75rem;color:#9CA3AF;margin:0;">- Sneha R., Mom of Ananya (5 yrs)</p>
+                    </div>
+                    <button class="btn btn-secondary" style="width:100%;">Add to Cart! 🛒</button>
+                </div>
+
+                <!-- GREEN BOTTLE - Nature Theme -->
+                <div class="product-card" data-color="green">
+                    <button class="product-favorite">🤍</button>
+                    <img src="assets/bottle-green.svg" alt="Minty Fresh" class="product-image">
+                    <h3 class="product-name">Minty Fresh 🌿</h3>
+                    <div class="product-tagline"
+                        style="background:linear-gradient(135deg,#BBF7D0,#86EFAC);padding:10px;border-radius:15px;margin:10px 0;">
+                        <p style="color:#166534;font-weight:600;font-size:0.9rem;margin:0;">
+                            "Grow strong like a tree! 🌳 Water helps you bloom like a beautiful garden!"
+                        </p>
+                    </div>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">500ml • Eco-Friendly • Recycled</p>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background:#86EFAC;"></span>
+                        <span class="color-dot" style="background:#4ADE80;"></span>
+                    </div>
+                    <p class="product-price">₹499</p>
+                    <!-- Review -->
+                    <div class="review-card"
+                        style="background:#F0FDF4;padding:12px;border-radius:12px;margin:10px 0;text-align:left;">
+                        <div style="color:#FDE047;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-size:0.85rem;color:#374151;margin:5px 0;">"Perfect for my little nature lover! He
+                            learned that trees need water and so does he. Great teaching tool!" 🌱</p>
+                        <p style="font-size:0.75rem;color:#9CA3AF;margin:0;">- Rahul K., Dad of Vivaan (7 yrs)</p>
+                    </div>
+                    <button class="btn btn-accent" style="width:100%;">Add to Cart! 🛒</button>
+                </div>
+
+                <!-- PURPLE BOTTLE - Magic & Dreams Theme -->
+                <div class="product-card" data-color="purple">
+                    <button class="product-favorite">🤍</button>
+                    <img src="assets/bottle-purple.svg" alt="Magic Grape" class="product-image">
+                    <h3 class="product-name">Magic Grape 🔮</h3>
+                    <div class="product-tagline"
+                        style="background:linear-gradient(135deg,#DDD6FE,#C4B5FD);padding:10px;border-radius:15px;margin:10px 0;">
+                        <p style="color:#5B21B6;font-weight:600;font-size:0.9rem;margin:0;">
+                            "Believe in magic! ✨ Every drop is a spell for health and happy dreams!"
+                        </p>
+                    </div>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">500ml • Color Changing • Special Edition</p>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background:#C4B5FD;"></span>
+                        <span class="color-dot" style="background:#A78BFA;"></span>
+                    </div>
+                    <p class="product-price">₹649</p>
+                    <!-- Review -->
+                    <div class="review-card"
+                        style="background:#FAF5FF;padding:12px;border-radius:12px;margin:10px 0;text-align:left;">
+                        <div style="color:#FDE047;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-size:0.85rem;color:#374151;margin:5px 0;">"The color changing feature is amazing!
+                            My daughter thinks she's a wizard making potions. Genius bottle!" 🧙‍♀️</p>
+                        <p style="font-size:0.75rem;color:#9CA3AF;margin:0;">- Meera S., Mom of Ishita (6 yrs)</p>
+                    </div>
+                    <button class="btn btn-outline" style="width:100%;border-color:#C4B5FD;color:#8B5CF6;">Add to Cart!
+                        🛒</button>
+                </div>
+
+                <!-- YELLOW BOTTLE - Sunshine & Energy Theme -->
+                <div class="product-card" data-color="yellow">
+                    <button class="product-favorite">🤍</button>
+                    <img src="assets/bottle-yellow.svg" alt="Sunny Sip" class="product-image">
+                    <h3 class="product-name">Sunny Sip ☀️</h3>
+                    <div class="product-tagline"
+                        style="background:linear-gradient(135deg,#FEF08A,#FDE047);padding:10px;border-radius:15px;margin:10px 0;">
+                        <p style="color:#A16207;font-weight:600;font-size:0.9rem;margin:0;">
+                            "Shine bright like the sun! 🌞 Water gives you energy to play all day long!"
+                        </p>
+                    </div>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">500ml • Glow in Dark • Super Fun</p>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background:#FDE047;"></span>
+                        <span class="color-dot" style="background:#FACC15;"></span>
+                    </div>
+                    <p class="product-price">₹599</p>
+                    <!-- Review -->
+                    <div class="review-card"
+                        style="background:#FEFCE8;padding:12px;border-radius:12px;margin:10px 0;text-align:left;">
+                        <div style="color:#FDE047;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-size:0.85rem;color:#374151;margin:5px 0;">"The glow feature is a HIT! My son
+                            takes it to sleepovers and shows it off to all his friends!" 🌟</p>
+                        <p style="font-size:0.75rem;color:#9CA3AF;margin:0;">- Amit P., Dad of Rohan (8 yrs)</p>
+                    </div>
+                    <button class="btn btn-accent" style="width:100%;">Add to Cart! 🛒</button>
+                </div>
+
+                <!-- BLUE BOTTLE 2 - Ocean Theme -->
+                <div class="product-card" data-color="blue">
+                    <button class="product-favorite">🤍</button>
+                    <img src="assets/bottle-blue.svg" alt="Sky Sipper" class="product-image">
+                    <h3 class="product-name">Deep Sea Diver 🐠</h3>
+                    <div class="product-tagline"
+                        style="background:linear-gradient(135deg,#BAE6FD,#7DD3FC);padding:10px;border-radius:15px;margin:10px 0;">
+                        <p style="color:#0369A1;font-weight:600;font-size:0.9rem;margin:0;">
+                            "Dive into hydration! 🌊 Be cool like the ocean and swim through your day!"
+                        </p>
+                    </div>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">400ml • With Straw • Kids Size</p>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background:#BAE6FD;"></span>
+                    </div>
+                    <p class="product-price">₹399</p>
+                    <!-- Review -->
+                    <div class="review-card"
+                        style="background:#F0F9FF;padding:12px;border-radius:12px;margin:10px 0;text-align:left;">
+                        <div style="color:#FDE047;">⭐⭐⭐⭐⭐</div>
+                        <p style="font-size:0.85rem;color:#374151;margin:5px 0;">"Perfect size for my 4-year-old! The
+                            straw makes it so easy for her to drink independently." 💙</p>
+                        <p style="font-size:0.75rem;color:#9CA3AF;margin:0;">- Kavitha N., Mom of Diya (4 yrs)</p>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%;">Add to Cart! 🛒</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Love Section -->
+    <section class="customer-love" style="padding:60px 0;background:linear-gradient(180deg,#FFFBEB,#FEF3C7);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kids & Parents Love Us! 💖</h2>
+                <p class="section-subtitle">Over 10,000 happy little drinkers!</p>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+                <div class="card card-cute" style="text-align:center;">
+                    <div style="font-size:3rem;margin-bottom:10px;">😍</div>
+                    <div style="color:#FDE047;font-size:1.2rem;">⭐⭐⭐⭐⭐</div>
+                    <p style="margin:15px 0;font-style:italic;">"Best purchase ever! My twins fight over whose bottle is
+                        prettier. Had to buy one for each color!" 😂</p>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">- The Sharma Family, Delhi</p>
+                </div>
+                <div class="card card-pink" style="text-align:center;">
+                    <div style="font-size:3rem;margin-bottom:10px;">🌟</div>
+                    <div style="color:#FDE047;font-size:1.2rem;">⭐⭐⭐⭐⭐</div>
+                    <p style="margin:15px 0;font-style:italic;">"The water tracker page is genius! My daughter actually
+                        reminds ME to drink water now." 💪</p>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">- Anjali R., Mumbai</p>
+                </div>
+                <div class="card card-mint" style="text-align:center;">
+                    <div style="font-size:3rem;margin-bottom:10px;">💚</div>
+                    <div style="color:#FDE047;font-size:1.2rem;">⭐⭐⭐⭐⭐</div>
+                    <p style="margin:15px 0;font-style:italic;">"School teacher here - I've recommended Sappikudi to all
+                        parents. Kids are so excited to drink water!" 🎒</p>
+                    <p style="color:#9CA3AF;font-size:0.9rem;">- Mrs. Patel, Bangalore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide -->
+    <section class="size-guide" style="padding:60px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Which Size is Right? 📏</h2>
+            </div>
+            <div class="size-cards"
+                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;">
+                <div class="card card-cute text-center">
+                    <div style="font-size:4rem;">🍼</div>
+                    <h3>Small (400ml)</h3>
+                    <p>Ages 3-5</p>
+                    <p style="color:#7DD3FC;font-weight:600;">Tiny Explorers!</p>
+                </div>
+                <div class="card card-pink text-center">
+                    <div style="font-size:4rem;">🥤</div>
+                    <h3>Medium (500ml)</h3>
+                    <p>Ages 5-8</p>
+                    <p style="color:#FB7185;font-weight:600;">School Champions!</p>
+                </div>
+                <div class="card card-mint text-center">
+                    <div style="font-size:4rem;">🧴</div>
+                    <h3>Large (600ml)</h3>
+                    <p>Ages 8+</p>
+                    <p style="color:#4ADE80;font-weight:600;">Super Stars!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Trust -->
+    <section class="parent-trust" style="background:linear-gradient(180deg,white,#FFFBEB);padding:60px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Parents Trust Us! 💕</h2>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center;">
+                <div>
+                    <div style="font-size:3rem;">🛡️</div>
+                    <h4>100% BPA Free</h4>
+                    <p style="color:#9CA3AF;font-size:0.85rem;">Safe for little ones!</p>
+                </div>
+                <div>
+                    <div style="font-size:3rem;">💧</div>
+                    <h4>Leak Proof</h4>
+                    <p style="color:#9CA3AF;font-size:0.85rem;">No messy bags!</p>
+                </div>
+                <div>
+                    <div style="font-size:3rem;">🧼</div>
+                    <h4>Easy Clean</h4>
+                    <p style="color:#9CA3AF;font-size:0.85rem;">Dishwasher safe!</p>
+                </div>
+                <div>
+                    <div style="font-size:3rem;">💪</div>
+                    <h4>Super Durable</h4>
+                    <p style="color:#9CA3AF;font-size:0.85rem;">Drop-proof design!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-mascot">💧</div>
+            <p class="footer-text">Made with 💙 by Sappikudi</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Bottles</a></li>
+                <li><a href="tracker.html">Water Fun</a></li>
+            </ul>
+            <p class="footer-copyright">© 2026 Sappikudi - Happy Hydration for Kids!</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/chatbot.js"></script>
+</body>
+
+</html>

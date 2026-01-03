@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your water intake and earn fun badges with Sappikudi Water Tracker!">
+    <title>Water Fun Tracker - Sappikudi ⭐</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">💧</div>
+                <span class="logo-text">Sappikudi</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="products.html">🍼 Bottles</a></li>
+                <li><a href="tracker.html" class="active">⭐ Water Fun</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header" style="padding-top:120px;padding-bottom:20px;">
+        <div class="container text-center">
+            <h1>Water Fun Tracker! ⭐</h1>
+            <p class="section-subtitle">Drink water, earn stars, be awesome!</p>
+        </div>
+    </section>
+
+    <!-- Mascot Encouragement -->
+    <section class="mascot-section" style="padding:20px 0;">
+        <div class="container text-center">
+            <div class="mascot-container">
+                <div style="font-size:6rem;" class="animate-bounce" id="mascotEmoji">💧</div>
+                <div class="mascot-speech" id="mascotMessage"
+                    style="position:relative;display:inline-block;background:#fff;padding:15px 25px;border-radius:20px;box-shadow:0 4px 15px rgba(125,211,252,0.2);margin-top:10px;">
+                    Let's drink some water today! 💪
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Progress -->
+    <section class="tracker-section" style="padding:30px 0;">
+        <div class="container">
+            <div class="tracker-container">
+                <div class="daily-goal card card-cute">
+                    <h2 class="text-center">Today's Goal 🎯</h2>
+                    <div class="goal-display text-center">
+                        <span id="currentGlasses">0</span> / <span id="goalGlasses">8</span> 🥛
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-container" style="margin:20px 0;">
+                        <div class="progress-bar" id="progressBar" style="width:0%;"></div>
+                    </div>
+                    <p class="text-center" id="progressText" style="color:#9CA3AF;">Click the glasses to track your
+                        water!</p>
+
+                    <!-- Water Glasses -->
+                    <div class="glasses-container" id="glassesContainer">
+                        <div class="water-glass" data-glass="1">
+                            <div class="water-fill"></div>
+                        </div>
+                        <div class="water-glass" data-glass="2">
+                            <div class="water-fill"></div>
+                        </div>
+                        <div class="water-glass" data-glass="3">
+                            <div class="water-fill"></div>
+                        </div>
+                        <div class="water-glass" data-glass="4">
+                            <div class="water-fill"></div>
+                        </div>
+                        <div class="water-glass" data-glass="5">
+                            <div class="water-fill"></div>
+                        </div>
+                        <div class="water-glass" data-glass="6">
+                            <div class="water-fill"></div>
+                        </div>
+                        <div class="water-glass" data-glass="7">
+                            <div class="water-fill"></div>
+                        </div>
+                        <div class="water-glass" data-glass="8">
+                            <div class="water-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="text-center" style="margin-top:20px;">
+                        <button class="btn btn-primary" id="addWaterBtn">➕ Add Water!</button>
+                        <button class="btn btn-outline" id="resetBtn" style="margin-left:10px;">🔄 Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" style="padding:30px 0;">
+        <div class="container">
+            <div class="tracker-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-value" id="streakCount">0</div>
+                    <div class="stat-label">Day Streak!</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-value" id="starsCount">0</div>
+                    <div class="stat-label">Stars Earned!</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-value" id="badgesCount">0</div>
+                    <div class="stat-label">Badges Won!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section class="rewards-section" style="padding:40px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Badges! 🏅</h2>
+                <p class="section-subtitle">Collect them all by staying hydrated!</p>
+            </div>
+            <div class="rewards-grid" id="rewardsGrid">
+                <div class="reward-card" data-badge="first-glass">
+                    <div class="reward-icon">🥛</div>
+                    <div class="reward-name">First Sip!</div>
+                </div>
+                <div class="reward-card" data-badge="half-way">
+                    <div class="reward-icon">🌟</div>
+                    <div class="reward-name">Half Way!</div>
+                </div>
+                <div class="reward-card" data-badge="goal-complete">
+                    <div class="reward-icon">🏆</div>
+                    <div class="reward-name">Goal Done!</div>
+                </div>
+                <div class="reward-card" data-badge="streak-3">
+                    <div class="reward-icon">🔥</div>
+                    <div class="reward-name">3 Day Streak!</div>
+                </div>
+                <div class="reward-card" data-badge="streak-7">
+                    <div class="reward-icon">⭐</div>
+                    <div class="reward-name">Week Hero!</div>
+                </div>
+                <div class="reward-card" data-badge="super-star">
+                    <div class="reward-icon">👑</div>
+                    <div class="reward-name">Super Star!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reminders -->
+    <section class="reminders-section" style="padding:40px 0;background:linear-gradient(180deg,#FFFBEB,#BAE6FD);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Water Time! ⏰</h2>
+            </div>
+            <div class="reminders-container">
+                <div class="reminder-card">
+                    <div class="reminder-emoji">🌅</div>
+                    <div class="reminder-text">
+                        <h4>Morning!</h4>
+                        <p>Start with water!</p>
+                    </div>
+                    <div class="reminder-time">7:00 AM</div>
+                </div>
+                <div class="reminder-card">
+                    <div class="reminder-emoji">📚</div>
+                    <div class="reminder-text">
+                        <h4>School Break!</h4>
+                        <p>Refill time!</p>
+                    </div>
+                    <div class="reminder-time">10:30 AM</div>
+                </div>
+                <div class="reminder-card">
+                    <div class="reminder-emoji">🍽️</div>
+                    <div class="reminder-text">
+                        <h4>Lunch!</h4>
+                        <p>Drink with food!</p>
+                    </div>
+                    <div class="reminder-time">1:00 PM</div>
+                </div>
+                <div class="reminder-card">
+                    <div class="reminder-emoji">⚽</div>
+                    <div class="reminder-text">
+                        <h4>Play Time!</h4>
+                        <p>Stay hydrated!</p>
+                    </div>
+                    <div class="reminder-time">4:00 PM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Celebration Modal -->
+    <div class="celebration-modal" id="celebrationModal"
+        style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:2000;align-items:center;justify-content:center;">
+        <div class="celebration-content"
+            style="background:white;padding:40px;border-radius:30px;text-align:center;max-width:400px;margin:20px;">
+            <div id="celebrationEmoji" style="font-size:5rem;" class="animate-celebrate">🎉</div>
+            <h2 id="celebrationTitle" style="color:#7DD3FC;margin:20px 0;">Amazing!</h2>
+            <p id="celebrationMessage">You're doing great!</p>
+            <button class="btn btn-primary" onclick="closeCelebration()" style="margin-top:20px;">Yay! 🌟</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-mascot">💧</div>
+            <p class="footer-text">Made with 💙 by Sappikudi</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Bottles</a></li>
+                <li><a href="tracker.html">Water Fun</a></li>
+            </ul>
+            <p class="footer-copyright">© 2026 Sappikudi</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/chatbot.js"></script>
+</body>
+
+</html>

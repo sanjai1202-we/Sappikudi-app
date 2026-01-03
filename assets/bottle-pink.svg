@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 200" fill="none">
+  <defs>
+    <linearGradient id="pinkBottle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FECDD3"/>
+      <stop offset="100%" style="stop-color:#FB7185"/>
+    </linearGradient>
+    <linearGradient id="pinkCap" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F43F5E"/>
+      <stop offset="100%" style="stop-color:#E11D48"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Cap with crown shape -->
+  <path d="M35 25 L35 15 L40 20 L45 10 L50 20 L55 5 L60 20 L65 10 L70 20 L75 15 L85 15 L85 25 Z" fill="url(#pinkCap)"/>
+  <rect x="35" y="25" width="50" height="15" rx="3" fill="url(#pinkCap)"/>
+  
+  <!-- Bottle neck -->
+  <rect x="40" y="40" width="40" height="20" rx="5" fill="url(#pinkBottle)"/>
+  
+  <!-- Bottle body -->
+  <path d="M30 60 L30 170 Q30 190 50 190 L70 190 Q90 190 90 170 L90 60 Q90 55 85 55 L35 55 Q30 55 30 60" fill="url(#pinkBottle)"/>
+  
+  <!-- Shine -->
+  <path d="M40 65 L40 175 Q40 180 45 180" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.5"/>
+  
+  <!-- Cute face with wink -->
+  <circle cx="50" cy="110" r="6" fill="#1E3A5F"/>
+  <path d="M64 110 Q70 105 76 110" stroke="#1E3A5F" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="48" cy="108" r="2" fill="#fff"/>
+  
+  <!-- Eyelashes -->
+  <path d="M62 104 L65 100" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M70 104 L70 99" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M78 104 L75 100" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Kiss lips -->
+  <ellipse cx="60" cy="132" rx="8" ry="6" fill="#E11D48"/>
+  
+  <!-- Blush -->
+  <ellipse cx="38" cy="120" rx="8" ry="5" fill="#FDA4AF" opacity="0.7"/>
+  <ellipse cx="82" cy="120" rx="8" ry="5" fill="#FDA4AF" opacity="0.7"/>
+  
+  <!-- Heart decoration -->
+  <text x="75" y="160" font-size="16">💕</text>
+  
+  <!-- Sparkles -->
+  <circle cx="15" cy="90" r="4" fill="#FDA4AF" opacity="0.6"/>
+  <circle cx="105" cy="80" r="3" fill="#FDA4AF" opacity="0.6"/>
+</svg>
